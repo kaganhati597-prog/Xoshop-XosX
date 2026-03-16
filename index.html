@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xoshop-XosX | Sipariş</title>
+    <style>
+        :root { --primary: #e67e22; --dark: #2c3e50; }
+        body { font-family: sans-serif; background: #f4f4f4; margin: 0; text-align: center; }
+        header { background: var(--dark); color: white; padding: 30px; }
+        .container { max-width: 600px; margin: 20px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .stok-btn { display: inline-block; background: #27ae60; color: white; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-bottom: 20px; transition: 0.3s; }
+        input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        .submit-btn { background: var(--primary); color: white; border: none; padding: 15px; width: 100%; border-radius: 5px; cursor: pointer; font-size: 1.1rem; }
+        .guide { margin-top: 40px; background: #fff; padding: 20px; border-radius: 10px; }
+        .guide img { width: 100%; max-width: 400px; border-radius: 8px; margin: 10px 0; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Xoshop-XosX Atölyesi</h1>
+    <p>İletişim: kaganhati597@gmail.com</p>
+</header>
+
+<div class="container">
+    <a href="stoklar.html" class="stok-btn">📦 MEVCUT STOKLARI GÖR</a>
+    
+    <form name="siparis" method="POST" data-netlify="true">
+        <h3>Sipariş ve Talep Formu</h3>
+        <input type="text" name="ad_soyad" placeholder="Adınız Soyadınız" required>
+        <select name="urun_secimi" required>
+            <option value="">İstediğiniz ürünü seçin...</option>
+            <option value="Endotrap head">Endotrap head</option>
+            <option value="Ozel">Özel Tasarım İsteği</option>
+        </select>
+        <textarea name="detaylar" placeholder="Sipariş detaylarını buraya yazın (kaganhati597@gmail.com üzerinden size dönüş yapılacaktır)"></textarea>
+        <button type="submit" class="submit-btn">İsteği Gönder</button>
+    </form>
+</div>
+
+<div class="container guide">
+    <h3>Nasıl İzin Verilir?</h3>
+    <p><b>1. Adım:</b> Ayarlara tıkla.</p>
+    <img src="IMG_20260316_140704.jpg">
+    <p><b>2. Adım:</b> İzinlere gir.</p>
+    <img src="IMG_20260316_140838.jpg">
+    <p><b>3. Adım:</b> Konum ve Pop-up aç.</p>
+    <img src="IMG_20260316_140958.jpg">
+</div>
+
+</body>
+</html>
+
